@@ -78,13 +78,13 @@ document.getElementById('book-form').addEventListener('submit',function(e){
     //validate
     if(title==='' || author===''|| isbn===''){
         //error alert 
-        ui.showAlert('please fill in all fields','error');
+        ui.showAlert('Please fill in all fields','error');
     }else{
         //add book to list
         ui.addBookToList(book);
 
         //show success
-        ui.showAlert('book added!','success');
+        ui.showAlert('Book added!','success');
 
         //clear fields
         ui.clearFields();
